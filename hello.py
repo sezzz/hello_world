@@ -4,9 +4,9 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return 'Hello World!'
-@app.route('/img')
+@app.route('/imgs')
 def img():
-    return send_file('img/vm1.png', mimetype='image/png')
+    return send_file('imgs/welcome.jpg', mimetype='image/jpg')
 if __name__ == '__main__':
     app.debug = True
     app.run(host='0.0.0.0')
